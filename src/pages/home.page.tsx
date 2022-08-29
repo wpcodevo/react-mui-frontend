@@ -35,7 +35,7 @@ const HomePage = () => {
       maxWidth={false}
       sx={{ backgroundColor: '#2363eb', height: '100vh' }}
     >
-      {true ? (
+      {posts?.length === 0 ? (
         <Box maxWidth='sm' sx={{ mx: 'auto', py: '5rem' }}>
           <Message type='info' title='Info'>
             No posts at the moment
